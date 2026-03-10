@@ -8,7 +8,8 @@ class CodPrac
     {
         //Prac_1();
         //Prac_2();
-        Prac_3();
+        //Prac_3();
+        Prac_4();
     }
 
     static void Prac_1()
@@ -59,6 +60,17 @@ class CodPrac
     }
     static void Prac_4()
     {
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
+        int firstEven = numbers.Find(n => n % 2 == 0);
+        Console.WriteLine($"첫 번째 짝수: {firstEven}");
+        List<int> allEven = numbers.FindAll(n => n % 2 == 0);
+        Console.WriteLine($"모든 짝수: {string.Join("," ,allEven)}");
+        bool morNum = numbers.Exists(n => n > 8);
+        Console.WriteLine($"8보다 큰 수 존재 : {morNum}");
+        bool plusNum = numbers.TrueForAll(n => n > 0);
+        Console.WriteLine($"모두 양수 : {plusNum}");
+        int deleteNum = numbers.RemoveAll(n => n % 2 == 0);
+        Console.WriteLine($"남은 숫자 {deleteNum}");
     }
 }
