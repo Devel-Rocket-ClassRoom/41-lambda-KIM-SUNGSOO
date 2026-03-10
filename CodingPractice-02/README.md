@@ -9,7 +9,10 @@
 
 ## 1. Func 대리자
 
-`Func<int>`, `Func<int, int>`, `Func<int, int, int>`을 각각 람다식으로 구현하세요. 1234 반환, 제곱 반환(`square(3)`), 두 수의 합 반환(`add(3, 5)`)을 각각 출력하세요.
+`Func<int>`, `Func<int, int>`, 
+`Func<int, int, int>`을 각각 람다식으로 
+구현하세요. 1234 반환, 제곱 반환(`square(3)`), 
+두 수의 합 반환(`add(3, 5)`)을 각각 출력하세요.
 
 **실행 결과**
 
@@ -39,7 +42,10 @@ Hello, Lambda!
 
 ## 3. 익명 메서드와 람다식 비교
 
-`Func<int, int>`에 `delegate (int x) { return x * x; }` 익명 메서드를 할당하고 `anonymous(2)`를 출력하세요. 동일한 기능을 람다식 `x => x * x`로 구현하여 `lambda(2)`를 출력하세요.
+`Func<int, int>`에 `delegate (int x) { return x * x; }`
+익명 메서드를 할당하고 `anonymous(2)`를 출력하세요. 
+동일한 기능을 람다식 `x => x * x`로 구현하여 `lambda(2)`를 
+출력하세요.
 
 **실행 결과**
 
